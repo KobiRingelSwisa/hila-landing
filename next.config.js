@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
   output: "export",
   trailingSlash: true,
-  basePath: "/hila-landing",
-  assetPrefix: "/hila-landing",
+  // Only use basePath for production (GitHub Pages)
+  ...(isProd && {
+    basePath: "/hila-landing",
+    assetPrefix: "/hila-landing",
+  }),
   images: {
     unoptimized: true,
   },

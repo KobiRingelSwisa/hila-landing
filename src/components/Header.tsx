@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,51 +20,77 @@ export function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/90 backdrop-blur-md shadow-lg" : "bg-transparent"
+        isScrolled
+          ? "bg-broken-white/90 backdrop-blur-md shadow-lg"
+          : "bg-transparent"
       }`}
     >
       <div className="container-max py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold gradient-text">
-            הילה
+          <Link href="/" className="flex items-center gap-3">
+            <div className="w-12 h-12 relative">
+              {/* Hila's Logo - Merkava in Gold */}
+              <div className="w-full h-full bg-gradient-to-br from-gold-1 to-gold-2 rounded-full flex items-center justify-center text-deep-blue font-bold text-lg shadow-lg">
+                ✡
+              </div>
+            </div>
+            <span
+              className={`text-2xl font-bold ${
+                isScrolled ? "text-text-dark" : "text-broken-white"
+              }`}
+            >
+              הילה
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <Link
               href="#about"
-              className="text-[var(--ink)] hover:text-[var(--lilac-1)] transition-colors font-medium"
+              className={`${
+                isScrolled ? "text-text-dark" : "text-broken-white"
+              } hover:text-gold-1 transition-colors font-medium`}
             >
               אודות הילה
             </Link>
             <Link
               href="#reset"
-              className="text-[var(--ink)] hover:text-[var(--lilac-1)] transition-colors font-medium"
+              className={`${
+                isScrolled ? "text-text-dark" : "text-broken-white"
+              } hover:text-gold-1 transition-colors font-medium`}
             >
               קורס RESET
             </Link>
             <Link
               href="#communication-course"
-              className="text-[var(--ink)] hover:text-[var(--lilac-1)] transition-colors font-medium"
+              className={`${
+                isScrolled ? "text-text-dark" : "text-broken-white"
+              } hover:text-gold-1 transition-colors font-medium`}
             >
               קורס תקשור
             </Link>
             <Link
               href="#personal-reading"
-              className="text-[var(--ink)] hover:text-[var(--lilac-1)] transition-colors font-medium"
+              className={`${
+                isScrolled ? "text-text-dark" : "text-broken-white"
+              } hover:text-gold-1 transition-colors font-medium`}
             >
               הזמנת תקשור אישי
             </Link>
             <Link
               href="#blog"
-              className="text-[var(--ink)] hover:text-[var(--lilac-1)] transition-colors font-medium"
+              className={`${
+                isScrolled ? "text-text-dark" : "text-broken-white"
+              } hover:text-gold-1 transition-colors font-medium`}
             >
               בלוג
             </Link>
             <Link
               href="#appointment"
-              className="text-[var(--ink)] hover:text-[var(--lilac-1)] transition-colors font-medium"
+              className={`${
+                isScrolled ? "text-text-dark" : "text-broken-white"
+              } hover:text-gold-1 transition-colors font-medium`}
             >
               קביעת פגישה
             </Link>
@@ -109,46 +136,62 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-[var(--lilac-2)]">
+          <div
+            className={`md:hidden mt-4 py-4 border-t ${
+              isScrolled ? "border-text-dark/20" : "border-broken-white/20"
+            }`}
+          >
             <nav className="flex flex-col space-y-4">
               <Link
                 href="#about"
-                className="text-[var(--ink)] hover:text-[var(--lilac-1)] transition-colors font-medium"
+                className={`${
+                  isScrolled ? "text-text-dark" : "text-broken-white"
+                } hover:text-gold-1 transition-colors font-medium`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 אודות הילה
               </Link>
               <Link
                 href="#reset"
-                className="text-[var(--ink)] hover:text-[var(--lilac-1)] transition-colors font-medium"
+                className={`${
+                  isScrolled ? "text-text-dark" : "text-broken-white"
+                } hover:text-gold-1 transition-colors font-medium`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 קורס RESET
               </Link>
               <Link
                 href="#communication-course"
-                className="text-[var(--ink)] hover:text-[var(--lilac-1)] transition-colors font-medium"
+                className={`${
+                  isScrolled ? "text-text-dark" : "text-broken-white"
+                } hover:text-gold-1 transition-colors font-medium`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 קורס תקשור
               </Link>
               <Link
                 href="#personal-reading"
-                className="text-[var(--ink)] hover:text-[var(--lilac-1)] transition-colors font-medium"
+                className={`${
+                  isScrolled ? "text-text-dark" : "text-broken-white"
+                } hover:text-gold-1 transition-colors font-medium`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 הזמנת תקשור אישי
               </Link>
               <Link
                 href="#blog"
-                className="text-[var(--ink)] hover:text-[var(--lilac-1)] transition-colors font-medium"
+                className={`${
+                  isScrolled ? "text-text-dark" : "text-broken-white"
+                } hover:text-gold-1 transition-colors font-medium`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 בלוג
               </Link>
               <Link
                 href="#appointment"
-                className="text-[var(--ink)] hover:text-[var(--lilac-1)] transition-colors font-medium"
+                className={`${
+                  isScrolled ? "text-text-dark" : "text-broken-white"
+                } hover:text-gold-1 transition-colors font-medium`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 קביעת פגישה

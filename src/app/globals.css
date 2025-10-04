@@ -4,23 +4,31 @@
 
 @layer base {
   :root {
-    /* Spiritual Color Palette */
-    --lilac-1: #b19cd9;
-    --lilac-2: #d4b5ff;
-    --lilac-3: #e6d9ff;
-    --turquoise-1: #40e0d0;
-    --turquoise-2: #7fffd4;
-    --turquoise-3: #b0e0e6;
-    --gold-1: #ffd700;
-    --gold-2: #fff8dc;
+    /* Hila's Color Palette */
+    --deep-purple: #1a0b3d;
+    --deep-blue: #0f172a;
+    --purple-blue: #2d1b69;
+    --broken-white: #f8fafc;
+    --off-white: #f1f5f9;
+    --dark-blue: #1e293b;
+    --navy-blue: #0f172a;
+    --text-dark: #1e293b;
+    --text-darker: #0f172a;
+    --gold-1: #fbbf24;
+    --gold-2: #fde68a;
+    --gold-3: #f59e0b;
     --white: #ffffff;
-    --ink: #2d1b69;
-    --paper: #f8f5ff;
+    --ink: #0f172a;
+    --paper: #f8fafc;
   }
 
   body {
-    background: linear-gradient(135deg, var(--paper) 0%, var(--lilac-3) 100%);
-    color: var(--ink);
+    background: linear-gradient(
+      135deg,
+      var(--deep-purple) 0%,
+      var(--deep-blue) 100%
+    );
+    color: var(--broken-white);
     font-family: var(--font-hebrew), -apple-system, BlinkMacSystemFont,
       "Segoe UI", Roboto, sans-serif;
     direction: rtl;
@@ -47,10 +55,10 @@
 
   .card {
     border-radius: 24px;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--broken-white);
     backdrop-filter: blur(12px);
-    box-shadow: 0 8px 32px rgba(177, 156, 217, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(26, 11, 61, 0.15);
+    border: 1px solid rgba(248, 250, 252, 0.3);
   }
 
   .card:hover {
@@ -62,11 +70,11 @@
   .spiritual-card {
     background: linear-gradient(
       135deg,
-      rgba(255, 255, 255, 0.9) 0%,
-      rgba(240, 248, 255, 0.9) 100%
+      var(--broken-white) 0%,
+      var(--off-white) 100%
     );
-    border: 1px solid rgba(177, 156, 217, 0.2);
-    box-shadow: 0 8px 32px rgba(177, 156, 217, 0.2);
+    border: 1px solid rgba(248, 250, 252, 0.2);
+    box-shadow: 0 8px 32px rgba(26, 11, 61, 0.2);
   }
 
   .btn {
@@ -85,13 +93,9 @@
   }
 
   .btn-primary {
-    color: #fff;
-    background: linear-gradient(
-      135deg,
-      var(--lilac-1) 0%,
-      var(--turquoise-1) 100%
-    );
-    box-shadow: 0 4px 15px rgba(177, 156, 217, 0.3);
+    color: var(--deep-blue);
+    background: linear-gradient(135deg, var(--gold-1) 0%, var(--gold-2) 100%);
+    box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
   }
 
   .btn-primary:hover {
@@ -128,9 +132,9 @@
   .gradient-text {
     background: linear-gradient(
       135deg,
-      var(--lilac-1) 0%,
-      var(--turquoise-1) 50%,
-      var(--gold-1) 100%
+      var(--gold-1) 0%,
+      var(--gold-2) 50%,
+      var(--gold-3) 100%
     );
     -webkit-background-clip: text;
     background-clip: text;
@@ -138,8 +142,18 @@
   }
 
   .spiritual-text {
-    color: var(--ink);
-    text-shadow: 0 1px 3px rgba(177, 156, 217, 0.1);
+    color: var(--text-dark);
+    text-shadow: 0 1px 3px rgba(30, 41, 59, 0.1);
+  }
+
+  .spiritual-text-on-dark {
+    color: var(--broken-white);
+    text-shadow: 0 1px 3px rgba(248, 250, 252, 0.1);
+  }
+
+  .gold-text-on-dark {
+    color: var(--gold-1);
+    text-shadow: 0 1px 3px rgba(251, 191, 36, 0.3);
   }
 
   /* Animations */

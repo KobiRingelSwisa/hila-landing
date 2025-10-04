@@ -11,20 +11,32 @@ module.exports = {
         hebrew: ["var(--font-hebrew)", "system-ui", "sans-serif"],
       },
       colors: {
-        lilac: "#B19CD9",
-        turquoise: "#40E0D0",
-        gold: "#FFD700",
+        // Hila's Color Palette
+        "deep-purple": "#1a0b3d",
+        "deep-blue": "#0f172a",
+        "purple-blue": "#2d1b69",
+        "broken-white": "#f8fafc",
+        "off-white": "#f1f5f9",
+        "dark-blue": "#1e293b",
+        "navy-blue": "#0f172a",
+        "text-dark": "#1e293b",
+        "text-darker": "#0f172a",
+        gold: {
+          1: "#fbbf24",
+          2: "#fde68a",
+          3: "#f59e0b",
+        },
         spiritual: {
-          50: "#F8F5FF",
-          100: "#F0E8FF",
-          200: "#E6D9FF",
-          300: "#D4B5FF",
-          400: "#B19CD9",
-          500: "#8B5A96",
-          600: "#7A4A85",
-          700: "#6B3A74",
-          800: "#5C2A63",
-          900: "#4D1A52",
+          50: "#F8FAFC",
+          100: "#F1F5F9",
+          200: "#E2E8F0",
+          300: "#CBD5E1",
+          400: "#94A3B8",
+          500: "#64748B",
+          600: "#475569",
+          700: "#334155",
+          800: "#1E293B",
+          900: "#0F172A",
         },
       },
       animation: {
@@ -34,13 +46,13 @@ module.exports = {
       },
       keyframes: {
         fadeIn: {
-          from: { 
+          from: {
             opacity: "0",
-            transform: "translateY(20px)"
+            transform: "translateY(20px)",
           },
-          to: { 
+          to: {
             opacity: "1",
-            transform: "translateY(0)"
+            transform: "translateY(0)",
           },
         },
         float: {

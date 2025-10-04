@@ -42,13 +42,20 @@ export default function HomePage() {
         <section id="hero" className="section-y spiritual-bg">
           <div className="container-max">
             <div className="text-center max-w-5xl mx-auto">
+              {/* Hila's Logo - Large */}
+              <div className="mb-8 animate-fade-in">
+                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-gold-1 to-gold-2 rounded-full flex items-center justify-center text-deep-blue font-bold text-4xl shadow-2xl animate-glow">
+                  ✡
+                </div>
+              </div>
+
               <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-8 animate-fade-in">
                 <span className="gradient-text">
                   הילה – תקשור, ריפוי ותהליכי RESET לשחרור רגשי והתפתחות תודעתית
                 </span>
               </h1>
 
-              <div className="text-[18px] leading-8 spiritual-text mb-8 space-y-6 animate-fade-in">
+              <div className="text-[18px] leading-8 spiritual-text-on-dark mb-8 space-y-6 animate-fade-in">
                 <p className="text-xl font-medium">
                   מאז ילדותי ליוו אותי שאלות מהותיות על טבע היקום, על מה שמתרחש
                   מעבר לזמן ולמרחב ועל מסע הנשמה בין העולמות...
@@ -75,7 +82,7 @@ export default function HomePage() {
                 </a>
               </div>
 
-              <div className="text-sm spiritual-text opacity-70 animate-fade-in">
+              <div className="text-sm gold-text-on-dark opacity-90 animate-fade-in">
                 <span>✨ תקשור אישי ומדויק</span>
                 <span className="mx-2">•</span>
                 <span>💎 כלים מתקדמים לריפוי רגשי</span>
@@ -89,7 +96,7 @@ export default function HomePage() {
         {/* About Section */}
         <section id="about" className="section-y">
           <div className="container-max max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 spiritual-text">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 gold-text-on-dark">
               אודות הילה – המסע הרוחני שלי
             </h2>
 
@@ -246,7 +253,7 @@ export default function HomePage() {
         {/* RESET 360° Section */}
         <section id="reset" className="section-y spiritual-bg">
           <div className="container-max max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 spiritual-text">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 gold-text-on-dark">
               תהליך RESET אישי – לשחרור כאבים טראומות פוביות תקיעויות, חסמים
               וחרדות
             </h2>
@@ -453,7 +460,7 @@ export default function HomePage() {
         {/* RESET ME Course Section */}
         <section id="reset-me" className="section-y">
           <div className="container-max max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 spiritual-text">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 gold-text-on-dark">
               🌟 קורס RESET ME – הכוח לרפא את עצמך בכל רגע קורס בסיס למטפלים
             </h2>
 
@@ -579,7 +586,7 @@ export default function HomePage() {
         {/* Communication Courses Section */}
         <section id="communication-course" className="section-y spiritual-bg">
           <div className="container-max max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 spiritual-text">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 gold-text-on-dark">
               קורסי תקשור והתפתחות רוחנית
             </h2>
 
@@ -643,7 +650,7 @@ export default function HomePage() {
             </div>
 
             <div className="text-center mt-12">
-              <p className="text-[18px] spiritual-text mb-6">
+              <p className="text-[18px] spiritual-text-on-dark mb-6">
                 רוצים לדעת איזה קורס מתאים לכם? בואו נשוחח
               </p>
               <a href="#appointment" className="btn btn-primary">
@@ -656,7 +663,7 @@ export default function HomePage() {
         {/* Personal Reading Section */}
         <section id="personal-reading" className="section-y">
           <div className="container-max max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 spiritual-text">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 gold-text-on-dark">
               הזמנת תקשור אישי
             </h2>
 
@@ -667,7 +674,7 @@ export default function HomePage() {
         {/* Appointment Section */}
         <section id="appointment" className="section-y spiritual-bg">
           <div className="container-max max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 spiritual-text">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 gold-text-on-dark">
               קביעת פגישה
             </h2>
 
@@ -678,7 +685,7 @@ export default function HomePage() {
         {/* Blog Section */}
         <section id="blog" className="section-y">
           <div className="container-max max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 spiritual-text">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 gold-text-on-dark">
               הבלוג שלי
             </h2>
 
@@ -746,7 +753,7 @@ export default function HomePage() {
         {/* External Links Section */}
         <section className="section-y spiritual-bg">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 spiritual-text">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 gold-text-on-dark">
               הצטרפו לקהילה שלי
             </h2>
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
@@ -774,10 +781,10 @@ export default function HomePage() {
         <section id="contact-form" className="section-y">
           <div className="container-max max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 spiritual-text">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 gold-text-on-dark">
                 בואו נתחיל לדבר – השאירו פרטים ואני חוזרת אליכם
               </h2>
-              <p className="text-[18px] spiritual-text opacity-70">
+              <p className="text-[18px] spiritual-text-on-dark opacity-70">
                 אני כאן כדי לעזור לך להתחיל את המסע הרוחני שלך. השאר פרטים ואני
                 אחזור אליך לשיחה ראשונית.
               </p>

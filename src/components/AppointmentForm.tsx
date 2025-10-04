@@ -94,7 +94,7 @@ export function AppointmentForm() {
         <div>
           <label
             htmlFor="name"
-            className="block text-sm font-medium spiritual-text mb-2"
+            className="block text-sm font-medium spiritual-text-on-dark mb-2"
           >
             שם מלא *
           </label>
@@ -113,7 +113,7 @@ export function AppointmentForm() {
         <div>
           <label
             htmlFor="phone"
-            className="block text-sm font-medium spiritual-text mb-2"
+            className="block text-sm font-medium spiritual-text-on-dark mb-2"
           >
             טלפון *
           </label>
@@ -133,7 +133,7 @@ export function AppointmentForm() {
       <div>
         <label
           htmlFor="email"
-          className="block text-sm font-medium spiritual-text mb-2"
+          className="block text-sm font-medium spiritual-text-on-dark mb-2"
         >
           אימייל *
         </label>
@@ -150,7 +150,7 @@ export function AppointmentForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-medium spiritual-text mb-3">
+        <label className="block text-sm font-medium spiritual-text-on-dark mb-3">
           במה אתה מעוניין? (ניתן לבחור מספר אפשרויות)
         </label>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
@@ -165,7 +165,7 @@ export function AppointmentForm() {
                 onChange={() => handleInterestChange(interest)}
                 className="w-4 h-4 text-[var(--lilac-1)] bg-gray-100 border-gray-300 rounded focus:ring-[var(--lilac-1)] focus:ring-2"
               />
-              <span className="text-sm spiritual-text">{interest}</span>
+              <span className="text-sm spiritual-text-on-dark">{interest}</span>
             </label>
           ))}
         </div>
@@ -183,7 +183,7 @@ export function AppointmentForm() {
         </button>
       </div>
 
-      <div className="text-center text-sm spiritual-text opacity-70">
+      <div className="text-center text-sm spiritual-text-on-dark opacity-70">
         <p>לחיצה על "שלח פרטים" תפתח גם חלון WhatsApp לשיחה ישירה איתי</p>
       </div>
     </form>

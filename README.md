@@ -40,11 +40,13 @@ npm run build
 ### הגדרה ראשונית:
 
 1. **הפעל GitHub Pages:**
+
    - לך להגדרות ה-repository
    - גלול לקטע "Pages"
    - בחר "GitHub Actions" כמקור
 
 2. **פריסה אוטומטית:**
+
    - האתר יתפרס אוטומטית בכל push ל-main branch
    - האתר יהיה זמין ב: `https://yourusername.github.io/hila-landing`
 
@@ -55,6 +57,7 @@ npm run build
 ### פלטפורמות נוספות:
 
 האתר יכול להיות מפורס גם ל:
+
 - **Netlify:** גרור ושחרר את תיקיית `out` אחרי `npm run build`
 - **Vercel:** חבר את ה-GitHub repository
 - **כל שירות אירוח סטטי:** השתמש בתיקיית `out`

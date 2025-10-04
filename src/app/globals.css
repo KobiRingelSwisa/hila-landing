@@ -1,0 +1,269 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Spiritual Color Palette */
+    --lilac-1: #b19cd9;
+    --lilac-2: #d4b5ff;
+    --lilac-3: #e6d9ff;
+    --turquoise-1: #40e0d0;
+    --turquoise-2: #7fffd4;
+    --turquoise-3: #b0e0e6;
+    --gold-1: #ffd700;
+    --gold-2: #fff8dc;
+    --white: #ffffff;
+    --ink: #2d1b69;
+    --paper: #f8f5ff;
+  }
+
+  body {
+    background: linear-gradient(135deg, var(--paper) 0%, var(--lilac-3) 100%);
+    color: var(--ink);
+    font-family: var(--font-hebrew), -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, sans-serif;
+    direction: rtl;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Global Classes */
+  .container-max {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+  }
+
+  .section-y {
+    padding-block: 88px;
+  }
+
+  .card {
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(177, 156, 217, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .card:hover {
+    box-shadow: 0 12px 40px rgba(177, 156, 217, 0.25);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+  }
+
+  .spiritual-card {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(240, 248, 255, 0.9) 100%
+    );
+    border: 1px solid rgba(177, 156, 217, 0.2);
+    box-shadow: 0 8px 32px rgba(177, 156, 217, 0.2);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background: linear-gradient(
+      135deg,
+      var(--lilac-1) 0%,
+      var(--turquoise-1) 100%
+    );
+    box-shadow: 0 4px 15px rgba(177, 156, 217, 0.3);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(177, 156, 217, 0.4);
+    filter: brightness(1.05);
+  }
+
+  .btn-secondary {
+    color: var(--ink);
+    background: linear-gradient(135deg, var(--gold-2) 0%, var(--white) 100%);
+    border: 2px solid var(--lilac-1);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+  }
+
+  .btn-secondary:hover {
+    background: linear-gradient(135deg, var(--lilac-3) 0%, var(--gold-2) 100%);
+    transform: translateY(-2px);
+  }
+
+  .btn-ghost {
+    color: var(--lilac-1);
+    border: 2px solid var(--lilac-1);
+    background: transparent;
+  }
+
+  .btn-ghost:hover {
+    background: var(--lilac-1);
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  /* Typography */
+  .gradient-text {
+    background: linear-gradient(
+      135deg,
+      var(--lilac-1) 0%,
+      var(--turquoise-1) 50%,
+      var(--gold-1) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .spiritual-text {
+    color: var(--ink);
+    text-shadow: 0 1px 3px rgba(177, 156, 217, 0.1);
+  }
+
+  /* Animations */
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 20px rgba(177, 156, 217, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 30px rgba(177, 156, 217, 0.6);
+    }
+  }
+
+  /* Spiritual Background Effects */
+  .spiritual-bg {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .spiritual-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        circle at 30% 20%,
+        rgba(177, 156, 217, 0.1) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 70% 80%,
+        rgba(64, 224, 208, 0.1) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 50% 50%,
+        rgba(255, 215, 0, 0.05) 0%,
+        transparent 70%
+      );
+    pointer-events: none;
+  }
+
+  /* Form Styles */
+  .form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid rgba(177, 156, 217, 0.3);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-color: var(--lilac-1);
+    box-shadow: 0 0 0 3px rgba(177, 156, 217, 0.1);
+  }
+
+  .form-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid rgba(177, 156, 217, 0.3);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    min-height: 120px;
+    resize: vertical;
+    transition: all 0.3s ease;
+  }
+
+  .form-textarea:focus {
+    outline: none;
+    border-color: var(--lilac-1);
+    box-shadow: 0 0 0 3px rgba(177, 156, 217, 0.1);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container-max {
+      padding-inline: 16px;
+    }
+
+    .section-y {
+      padding-block: 60px;
+    }
+
+    .card {
+      border-radius: 16px;
+      padding: 20px;
+    }
+  }
+}

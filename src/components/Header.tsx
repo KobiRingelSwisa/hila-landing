@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import hilaLogo from "../../public/images/hila-logo.png";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,7 +38,7 @@ export function Header() {
                 } relative transition-all duration-300`}
               >
                 <Image
-                  src="/images/hila-logo.png"
+                  src={hilaLogo}
                   alt="הילה תחכמוני - לוגו"
                   width={isScrolled ? 96 : 128}
                   height={isScrolled ? 96 : 128}

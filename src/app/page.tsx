@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import hilaPhoto from "../../public/images/hila-photo.jpg";
 import Link from "next/link";
 import { Header } from "@/components/Header";
 
@@ -93,7 +94,7 @@ export default function HomePage() {
               <div className="text-center">
                 <div className="relative inline-block">
                   <Image
-                    src="/images/hila-photo.jpg"
+                    src={hilaPhoto}
                     alt="הילה תחכמוני - מתקשרת ומטפלת רגשית"
                     width={400}
                     height={500}

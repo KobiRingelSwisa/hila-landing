@@ -1,0 +1,104 @@
+"use client";
+
+import { Header } from "@/components/Header";
+import { ContactForm } from "@/components/ContactForm";
+
+export default function CommunicationCoursePage() {
+  return (
+    <>
+      <main id="main" className="min-h-screen">
+        <Header />
+
+        {/* Communication Courses Section */}
+        <section id="communication-course" className="section-y mt-40">
+          <div className="container-max max-w-5xl mx-auto">
+            <h1 className="text-3xl md:text-4xl font-bold text-center mb-12 gold-text-on-dark">
+              קורסי תקשור והתפתחות רוחנית
+            </h1>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* שלב א */}
+              <div className="spiritual-card p-6">
+                <div className="text-center mb-6">
+                  <h2 className="text-xl font-bold mb-4 gradient-text">
+                    שלב א: קורס התפתחות אישית רוחנית
+                  </h2>
+                </div>
+                <p className="spiritual-text mb-6">
+                  קורס בסיסי שמעניק לך את היסודות להתפתחות רוחנית אישית. תלמד על
+                  עקרונות התקשור, חיבור למדריכים רוחניים, ופיתוח האינטואיציה
+                  הפנימית שלך.
+                </p>
+                <div className="text-center">
+                  <a href="#contact-form" className="btn btn-primary btn-sm">
+                    לפרטים נוספים והרשמה
+                  </a>
+                </div>
+              </div>
+
+              {/* שלב ב */}
+              <div className="spiritual-card p-6">
+                <div className="text-center mb-6">
+                  <h2 className="text-xl font-bold mb-4 gradient-text">
+                    שלב ב: קורס שחזור גלגולים
+                  </h2>
+                </div>
+                <p className="spiritual-text mb-6">
+                  קורס מתקדם שעוסק בגילוי וטיפול בדפוסים שמקורם בחיים קודמים.
+                  תלמד לזהות ולשחרר חסימות אנרגטיות ורגשיות שמשפיעות על חייך
+                  הנוכחיים.
+                </p>
+                <div className="text-center">
+                  <a href="#contact-form" className="btn btn-primary btn-sm">
+                    לפרטים נוספים והרשמה
+                  </a>
+                </div>
+              </div>
+
+              {/* קורס למטפלים */}
+              <div className="spiritual-card p-6">
+                <div className="text-center mb-6">
+                  <h2 className="text-xl font-bold mb-4 gradient-text">
+                    קורס RESET למטפלים
+                  </h2>
+                </div>
+                <p className="spiritual-text mb-6">
+                  קורס מקצועי למטפלים שרוצים ללמוד את שיטת RESET ולהשתמש בה ככלי
+                  טיפולי עוצמתי. הקורס כולל הכשרה מעמיקה וכלים מעשיים לשחרור
+                  רגשי וריפוי.
+                </p>
+                <div className="text-center">
+                  <a href="#contact-form" className="btn btn-primary btn-sm">
+                    לפרטים נוספים והרשמה
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-xl spiritual-text-on-dark mb-6">
+                רוצים לדעת איזה קורס מתאים לכם? בואו נשוחח
+              </p>
+              <a
+                href="https://wa.me/972XXXXXXXXX?text=אני%20מעוניין/ת%20לשמוע%20על%20קורסי%20התקשור%20וההתפתחות%20הרוחנית"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary text-lg px-8 py-4"
+              >
+                שלחו הודעה בוואצאפ
+              </a>
+            </div>
+
+            {/* Contact Form */}
+            <div className="spiritual-card p-8 md:p-12 mt-12">
+              <h2 className="text-2xl font-bold mb-6 gradient-text text-center">
+                רוצים לשמוע עוד על הקורסים?
+              </h2>
+              <ContactForm />
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
+  );
+}

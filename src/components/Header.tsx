@@ -21,184 +21,194 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-broken-white/90 backdrop-blur-md shadow-lg"
+          ? "bg-deep-purple/95 backdrop-blur-md shadow-lg"
           : "bg-transparent"
       }`}
     >
-      <div className="container-max py-4">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 relative">
-              {/* Hila's Logo - Merkava in Gold */}
-              <div className="w-full h-full bg-gradient-to-br from-gold-1 to-gold-2 rounded-full flex items-center justify-center text-deep-blue font-bold text-lg shadow-lg">
-                ✡
+      <div className="container-max py-6">
+        {/* Header Content - Logo and Text */}
+        <div className="flex items-center justify-between mb-6">
+          {/* Logo - Right Side */}
+          <div className="flex-shrink-0 mr-8">
+            <Link href="/" className="flex items-center">
+              <div
+                className={`${
+                  isScrolled ? "w-24 h-24" : "w-32 h-32"
+                } relative transition-all duration-300`}
+              >
+                <Image
+                  src="/images/hila-logo.png"
+                  alt="הילה תחכמוני - לוגו"
+                  width={isScrolled ? 96 : 128}
+                  height={isScrolled ? 96 : 128}
+                  className="w-full h-full object-contain"
+                />
               </div>
-            </div>
-            <span
-              className={`text-2xl font-bold ${
-                isScrolled ? "text-text-dark" : "text-broken-white"
-              }`}
-            >
-              הילה
-            </span>
-          </Link>
+            </Link>
+          </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            <Link
-              href="#about"
-              className={`${
-                isScrolled ? "text-text-dark" : "text-broken-white"
-              } hover:text-gold-1 transition-colors font-medium`}
+          {/* Central Text Block */}
+          <div className="flex-1 text-center px-8">
+            <h1
+              className={`text-3xl md:text-4xl font-bold mb-2 gradient-text ${
+                isScrolled ? "text-2xl md:text-3xl" : ""
+              } transition-all duration-300`}
             >
-              אודות הילה
-            </Link>
-            <Link
-              href="#reset"
-              className={`${
-                isScrolled ? "text-text-dark" : "text-broken-white"
-              } hover:text-gold-1 transition-colors font-medium`}
+              הילה תחכמוני
+            </h1>
+            <p
+              className={`text-lg md:text-xl gold-text-on-dark ${
+                isScrolled ? "text-base md:text-lg" : ""
+              } transition-all duration-300`}
             >
-              קורס RESET
-            </Link>
-            <Link
-              href="#communication-course"
-              className={`${
-                isScrolled ? "text-text-dark" : "text-broken-white"
-              } hover:text-gold-1 transition-colors font-medium`}
-            >
-              קורס תקשור
-            </Link>
-            <Link
-              href="#personal-reading"
-              className={`${
-                isScrolled ? "text-text-dark" : "text-broken-white"
-              } hover:text-gold-1 transition-colors font-medium`}
-            >
-              הזמנת תקשור אישי
-            </Link>
-            <Link
-              href="#blog"
-              className={`${
-                isScrolled ? "text-text-dark" : "text-broken-white"
-              } hover:text-gold-1 transition-colors font-medium`}
-            >
-              בלוג
-            </Link>
-            <Link
-              href="#appointment"
-              className={`${
-                isScrolled ? "text-text-dark" : "text-broken-white"
-              } hover:text-gold-1 transition-colors font-medium`}
-            >
-              קביעת פגישה
-            </Link>
-          </nav>
-
-          {/* CTA Button */}
-          <a
-            href="#appointment"
-            className="btn btn-primary hidden md:inline-flex"
-          >
-            קביעת פגישה
-          </a>
+              תקשור, ריפוי ותהליכי RESET לשחרור רגשי והתפתחות תודעתית
+            </p>
+          </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          <div className="flex-shrink-0 md:hidden">
+            <button
+              className="p-2"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              {isMobileMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
+              <div className="w-6 h-6 flex flex-col justify-center space-y-1">
+                <div
+                  className={`h-0.5 bg-current transition-all duration-300 ${
+                    isMobileMenuOpen ? "rotate-45 translate-y-1.5" : ""
+                  }`}
+                ></div>
+                <div
+                  className={`h-0.5 bg-current transition-all duration-300 ${
+                    isMobileMenuOpen ? "opacity-0" : ""
+                  }`}
+                ></div>
+                <div
+                  className={`h-0.5 bg-current transition-all duration-300 ${
+                    isMobileMenuOpen ? "-rotate-45 -translate-y-1.5" : ""
+                  }`}
+                ></div>
+              </div>
+            </button>
+          </div>
         </div>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center justify-center gap-8">
+          <Link
+            href="/about"
+            className={`${
+              isScrolled ? "text-broken-white" : "text-broken-white"
+            } hover:text-gold-1 transition-colors font-medium`}
+          >
+            קצת עליי
+          </Link>
+          <Link
+            href="/reset"
+            className={`${
+              isScrolled ? "text-broken-white" : "text-broken-white"
+            } hover:text-gold-1 transition-colors font-medium`}
+          >
+            קורס RESET
+          </Link>
+          <Link
+            href="/communication-course"
+            className={`${
+              isScrolled ? "text-broken-white" : "text-broken-white"
+            } hover:text-gold-1 transition-colors font-medium`}
+          >
+            קורס תקשור
+          </Link>
+          <Link
+            href="/personal-reading"
+            className={`${
+              isScrolled ? "text-broken-white" : "text-broken-white"
+            } hover:text-gold-1 transition-colors font-medium`}
+          >
+            הזמנת תקשור אישי
+          </Link>
+          <Link
+            href="/blog"
+            className={`${
+              isScrolled ? "text-broken-white" : "text-broken-white"
+            } hover:text-gold-1 transition-colors font-medium`}
+          >
+            בלוג
+          </Link>
+          <Link
+            href="/appointment"
+            className={`${
+              isScrolled ? "text-broken-white" : "text-broken-white"
+            } hover:text-gold-1 transition-colors font-medium`}
+          >
+            קביעת פגישה
+          </Link>
+        </nav>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div
             className={`md:hidden mt-4 py-4 border-t ${
-              isScrolled ? "border-text-dark/20" : "border-broken-white/20"
+              isScrolled ? "border-broken-white/20" : "border-broken-white/20"
             }`}
           >
             <nav className="flex flex-col space-y-4">
               <Link
-                href="#about"
+                href="/about"
                 className={`${
-                  isScrolled ? "text-text-dark" : "text-broken-white"
+                  isScrolled ? "text-broken-white" : "text-broken-white"
                 } hover:text-gold-1 transition-colors font-medium`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                אודות הילה
+                קצת עליי
               </Link>
               <Link
-                href="#reset"
+                href="/reset"
                 className={`${
-                  isScrolled ? "text-text-dark" : "text-broken-white"
+                  isScrolled ? "text-broken-white" : "text-broken-white"
                 } hover:text-gold-1 transition-colors font-medium`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 קורס RESET
               </Link>
               <Link
-                href="#communication-course"
+                href="/communication-course"
                 className={`${
-                  isScrolled ? "text-text-dark" : "text-broken-white"
+                  isScrolled ? "text-broken-white" : "text-broken-white"
                 } hover:text-gold-1 transition-colors font-medium`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 קורס תקשור
               </Link>
               <Link
-                href="#personal-reading"
+                href="/personal-reading"
                 className={`${
-                  isScrolled ? "text-text-dark" : "text-broken-white"
+                  isScrolled ? "text-broken-white" : "text-broken-white"
                 } hover:text-gold-1 transition-colors font-medium`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 הזמנת תקשור אישי
               </Link>
               <Link
-                href="#blog"
+                href="/blog"
                 className={`${
-                  isScrolled ? "text-text-dark" : "text-broken-white"
+                  isScrolled ? "text-broken-white" : "text-broken-white"
                 } hover:text-gold-1 transition-colors font-medium`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 בלוג
               </Link>
               <Link
-                href="#appointment"
+                href="/appointment"
                 className={`${
-                  isScrolled ? "text-text-dark" : "text-broken-white"
+                  isScrolled ? "text-broken-white" : "text-broken-white"
                 } hover:text-gold-1 transition-colors font-medium`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 קביעת פגישה
               </Link>
-              <a href="#appointment" className="btn btn-primary w-full mt-4">
+              <Link href="/appointment" className="btn btn-primary w-full mt-4">
                 קביעת פגישה
-              </a>
+              </Link>
             </nav>
           </div>
         )}

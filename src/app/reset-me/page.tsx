@@ -26,6 +26,26 @@ export default function ResetMePage() {
                   בלי להמתין למטפל. בלי להיתקע בתחושות. בלי לשקוע במחשבות
                   שחוזרות שוב ושוב.
                 </p>
+
+                <div className="mt-8 p-6 bg-gradient-to-r from-purple-900/20 to-blue-900/20 rounded-lg border border-gold-1/20">
+                  <div className="space-y-4 text-[16px] leading-7 spiritual-text">
+                    <p>
+                      תארו לעצמכם רגע שבו אתם כבר לא נבהלים מהרגש. רגע שבו אתם
+                      יודעים להישאר נוכחים, גם כשהגל עולה. זוהי מתנה אדירה –
+                      לדעת לא לרוץ החוצה, אלא לחזור פנימה.
+                    </p>
+                    <p>
+                      קורס RESET ME נולד מתוך הבנה עמוקה שהריפוי האמיתי לא קורה
+                      בחדר הטיפולים – הוא קורה כשאנחנו לומדים להקשיב לעצמנו.
+                      כשהלב מבין שהוא לא לבד, כשהנשימה חוזרת לגוף, כשהנשמה
+                      סוף־סוף מרגישה בטוחה.
+                    </p>
+                    <p>
+                      זהו מסע של חניכה אישית לריפוי, שבו אתם הופכים להיות
+                      המטפלים של עצמכם.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               <div className="grid md:grid-cols-2 gap-8">
@@ -45,6 +65,23 @@ export default function ResetMePage() {
                         במקום להיסחף – אתם יודעים איך לאפס את עצמכם ולחזור
                         לשלווה וביטחון.
                       </p>
+
+                      <div className="mt-4 p-4 bg-gradient-to-r from-gold-1/10 to-gold-2/10 rounded-lg border border-gold-1/30">
+                        <div className="space-y-2 text-[14px] leading-6 spiritual-text">
+                          <p>
+                            היכולת להרגיע את עצמך ברגע של סערה היא ביטוי של
+                            עוצמה פנימית, לא של חולשה. ברגע שבו את.ה בוחר לנשום
+                            במקום לברוח, לשחרר במקום להילחם – את.ה בעצם משיב
+                            לעצמך את השליטה על חייך.
+                          </p>
+                          <p>
+                            בקורס הזה אנחנו לומדים להקשיב לשפה של הגוף – לראות
+                            את הסימנים שהוא שולח לא כ"אויב", אלא כשליח של הנשמה.
+                            וכשאנחנו מבינים את השפה הזו, היא מפסיקה לצעוק –
+                            ומתחילה לדבר באהבה.
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -72,6 +109,22 @@ export default function ResetMePage() {
                           • להטמיע במקומו קובץ חדש – ביטחון, שמחה, אהבה עצמית,
                           ערך עצמי, קלילות
                         </li>
+
+                        <div className="mt-4 p-4 bg-gradient-to-r from-purple-800/10 to-blue-800/10 rounded-lg border border-purple-400/30">
+                          <div className="space-y-2 text-[14px] leading-6 spiritual-text">
+                            <p>
+                              זה לא "שיעור טכני", אלא מסע של זכירה. כשאנחנו
+                              מתחילים לשחרר את המטענים, אנחנו לא רק מנקים את
+                              הגוף – אנחנו מזכירים לעצמנו מי אנחנו באמת, לפני
+                              הכאב, לפני הפחד, לפני הסיפור.
+                            </p>
+                            <p>
+                              בכל פעם שתשתמשו בכלי הזה – תרגישו שאתם חוזרים
+                              הביתה. לאט לאט, שכבה אחר שכבה, תגלו שהכוח לרפא
+                              תמיד היה בתוככם.
+                            </p>
+                          </div>
+                        </div>
                       </ul>
                     </div>
                   </div>
@@ -91,6 +144,17 @@ export default function ResetMePage() {
                       <p className="text-[16px] spiritual-text mt-4">
                         במקום זה – כלי אישי שתמיד איתכם. בכל מקום. בכל זמן.
                       </p>
+
+                      <div className="mt-4 p-4 bg-gradient-to-r from-gold-1/10 to-gold-2/10 rounded-lg border border-gold-1/30">
+                        <div className="space-y-2 text-[14px] leading-6 spiritual-text">
+                          <p>
+                            בעולם שבו הכול רץ קדימה, היכולת לעצור ולהתאזן הפכה
+                            לזהב. RESET ME הוא לא עוד שיטה – הוא דרך חיים. הוא
+                            מזכיר לנו שהריפוי לא תלוי בזמן, במקום או באדם אחר –
+                            אלא ברגע שבו אנחנו בוחרים להיות נוכחים באור שלנו.
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -115,6 +179,36 @@ export default function ResetMePage() {
                         כמה כוח יש לכם – להחזיר לעצמכם את החירות הפנימית, השליטה
                         והשלווה.
                       </p>
+
+                      <div className="mt-4 p-4 bg-gradient-to-r from-purple-800/10 to-blue-800/10 rounded-lg border border-purple-400/30">
+                        <div className="space-y-2 text-[14px] leading-6 spiritual-text">
+                          <p>
+                            כל שיעור הוא כמו מפגש עם החלקים בתוככם שביקשו כל כך
+                            זמן להתבהר. לא מדובר רק בלמידה – מדובר בחוויה
+                            תודעתית שמרחיבה את ההבנה, פותחת את הלב, ומזמינה אתכם
+                            לשוב לתדר של ריפוי עצמי טבעי.
+                          </p>
+                          <p>
+                            המסע הזה לא נועד ללמד אתכם עוד ידע — אלא להזכיר לכם
+                            את מה שהנשמה שלכם כבר יודעת.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="mt-4 p-4 bg-gradient-to-r from-gold-1/10 to-gold-2/10 rounded-lg border border-gold-1/30">
+                        <div className="space-y-2 text-[14px] leading-6 spiritual-text">
+                          <p>
+                            במקום שבו את.ה לומד לרפא את עצמך, מתרחש שינוי עמוק
+                            במציאות שלך. כי כל תודעה שנפתחת לריפוי – שולחת אור
+                            לעולם כולו.
+                          </p>
+                          <p>
+                            RESET ME הוא לא רק קורס, הוא תדר חדש של חיים. תדר של
+                            אהבה, נוכחות ואמון. וכשאת.ה בתדר הזה – גם העולם מגיב
+                            באור.
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

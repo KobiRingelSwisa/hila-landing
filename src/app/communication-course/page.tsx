@@ -29,6 +29,22 @@ export default function CommunicationCoursePage() {
                   עקרונות התקשור, חיבור למדריכים רוחניים, ופיתוח האינטואיציה
                   הפנימית שלך.
                 </p>
+
+                <div className="mt-4 p-4 bg-gradient-to-r from-purple-900/10 to-blue-900/10 rounded-lg border border-gold-1/20">
+                  <div className="space-y-2 text-[14px] leading-6 spiritual-text">
+                    <p>
+                      בשלב הזה אנחנו מניחים את היסודות למסע אל עצמך. אתה לומד
+                      להבחין בין הקול של המיינד לבין הקול של הנשמה, להקשיב לשקט
+                      הפנימי – המקום שבו נמצאות כל התשובות.
+                    </p>
+                    <p>
+                      זה לא רק ידע, זו דרך חיים. קורס ההתפתחות האישית הוא כמו
+                      שער שבו אתה מתחיל לזהות את השפה של היקום: הסימנים, המסרים,
+                      ההרגשות העדינות שמנחות אותך כל הזמן – אבל הפעם, אתה לומד
+                      להקשיב להן באמת.
+                    </p>
+                  </div>
+                </div>
                 <div className="text-center">
                   <a href="#contact-form" className="btn btn-primary btn-sm">
                     לפרטים נוספים והרשמה
@@ -48,6 +64,26 @@ export default function CommunicationCoursePage() {
                   תלמד לזהות ולשחרר חסימות אנרגטיות ורגשיות שמשפיעות על חייך
                   הנוכחיים.
                 </p>
+
+                <div className="mt-4 p-4 bg-gradient-to-r from-gold-1/10 to-gold-2/10 rounded-lg border border-gold-1/30">
+                  <div className="space-y-2 text-[14px] leading-6 spiritual-text">
+                    <p>
+                      כשאנחנו נולדים, אנחנו לא מתחילים מאפס – אנחנו ממשיכים מסע.
+                      הנשמה נושאת איתה זיכרונות, רגשות ותובנות מחיים קודמים, והם
+                      ממשיכים לפעול מתחת לפני השטח גם עכשיו.
+                    </p>
+                    <p>
+                      בשחזור גלגולים, אנחנו לא "חופרים בעבר" – אנחנו מאירים עליו
+                      אור. אנחנו פוגשים את המקומות שבהם נתקענו, ומאפשרים להם
+                      סוף־סוף להשתחרר ולהתמוסס באהבה.
+                    </p>
+                    <p>
+                      זה תהליך שמרגיש כמו להחזיר לעצמך חלקים אבודים של הנשמה
+                      שלך. אחרי החוויה הזו – החיים מתחילים לזרום אחרת, עם בהירות
+                      פנימית חדשה.
+                    </p>
+                  </div>
+                </div>
                 <div className="text-center">
                   <a href="#contact-form" className="btn btn-primary btn-sm">
                     לפרטים נוספים והרשמה

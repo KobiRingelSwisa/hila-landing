@@ -22,15 +22,23 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-deep-purple/95 backdrop-blur-md shadow-lg"
+          ? "bg-gradient-to-b from-deep-purple via-deep-purple to-deep-purple/95 backdrop-blur-md shadow-lg shadow-deep-purple/50"
           : "bg-transparent"
       }`}
+      style={
+        isScrolled
+          ? {
+              background:
+                "linear-gradient(135deg, var(--deep-purple) 0%, var(--purple-blue) 100%)",
+            }
+          : {}
+      }
     >
       <div className="container-max py-6">
         {/* Header Content - Logo and Text */}
         <div className="flex items-center justify-between mb-6">
-          {/* Logo - Right Side */}
-          <div className="flex-shrink-0 mr-8">
+          {/* Logo - Center */}
+          <div className="flex-1 flex justify-center">
             <Link href="/" className="flex items-center">
               <div
                 className={`${
@@ -46,24 +54,6 @@ export function Header() {
                 />
               </div>
             </Link>
-          </div>
-
-          {/* Central Text Block */}
-          <div className="flex-1 text-center px-8">
-            <h1
-              className={`text-3xl md:text-4xl font-bold mb-2 gradient-text ${
-                isScrolled ? "text-2xl md:text-3xl" : ""
-              } transition-all duration-300`}
-            >
-              הילה תחכמוני
-            </h1>
-            <p
-              className={`text-lg md:text-xl gold-text-on-dark ${
-                isScrolled ? "text-base md:text-lg" : ""
-              } transition-all duration-300`}
-            >
-              תקשור, ריפוי ותהליכי RESET לשחרור רגשי והתפתחות תודעתית
-            </p>
           </div>
 
           {/* Mobile Menu Button */}

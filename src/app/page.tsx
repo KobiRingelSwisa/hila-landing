@@ -87,6 +87,30 @@ export default function HomePage() {
                     לעזור לך לשחרר רגשות תקועים, להתחבר למסרים מהמימדים הגבוהים,
                     ולצאת למסע של התפתחות והעצמה אישית.
                   </p>
+
+                  <div className="mt-8 p-6 bg-gradient-to-r from-purple-900/20 to-blue-900/20 rounded-lg border border-gold-1/20">
+                    <div className="space-y-4 text-[16px] leading-7 spiritual-text-on-dark">
+                      <p>
+                        כל מסע של ריפוי מתחיל ברגע שבו אנחנו עוצרים, נושמים,
+                        ומסכימים להביט פנימה — מעבר לסיפור, מעבר לכאב, אל תוך
+                        המקום השקט שבו הנשמה זוכרת. שם, במקום הזה, מתחיל הריפוי.
+                      </p>
+                      <p>
+                        המסע שאני מלווה אליו הוא מסע של אמת – לא עוד חיפוש
+                        חיצוני, אלא גילוי של האור שכבר נמצא בתוכך.
+                      </p>
+                      <p>
+                        דרך התקשור, אנחנו לומדים להקשיב לא רק למה שהמוח מספר,
+                        אלא למה שהנשמה לוחשת. כל מסר שמתקבל הוא מפתח, וכל מפתח
+                        פותח שכבה נוספת של הבנה, רוך ואהבה עצמית.
+                      </p>
+                      <p>
+                        תהליכי ה־RESET שאני מלמדת אינם רק כלים – הם שערים. שערים
+                        לשחרור, להיזכרות, ולהתעוררות אל עצמך. כי כשאת מתחברת
+                        למקור שלך – כל מה שמסביב מתחיל להתבהר.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -114,7 +138,7 @@ export default function HomePage() {
             </h2>
             <div className="flex flex-col md:flex-row gap-6 justify-center">
               <a
-                href="https://www.facebook.com/groups/hila.tahkmoni.community"
+                href="https://www.facebook.com/groups/385840256440426"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary text-lg px-8 py-4"
@@ -129,6 +153,25 @@ export default function HomePage() {
               >
                 צפו בסרטונים ומסרים חדשים ביוטיוב
               </a>
+            </div>
+
+            <div className="mt-8 p-6 bg-gradient-to-r from-gold-1/10 to-gold-2/10 rounded-lg border border-gold-1/30">
+              <div className="space-y-4 text-[16px] leading-7 spiritual-text-on-dark text-center">
+                <p>
+                  הקהילה שלי נולדה מתוך הלב, כדי שכל אחת ואחד יוכל לזכור שהוא לא
+                  לבד בדרך הזו. אנחנו צועדים יחד — משתפים, לומדים, נפתחים
+                  ומתרחבים.
+                </p>
+                <p>
+                  בכל יום אני רואה איך אור קטן של אמת אחת, מסר אחד, או הבנה אחת
+                  עמוקה — מסוגלים לשנות חיים שלמים.
+                </p>
+                <p>
+                  הקהילה הזו היא לא רק מקום — היא שדה של תודעה. שדה שבו אנשים
+                  חוזרים אל הלב שלהם, ומגלים כמה כוח, חמלה וידיעה יש בהם מאז
+                  ומתמיד.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -151,6 +194,21 @@ export default function HomePage() {
               <span>כלים מתקדמים לריפוי רגשי</span>
               <span className="mx-2">•</span>
               <span>קורסים מקיפים להתפתחות תודעתית</span>
+            </div>
+
+            <div className="mt-8 p-6 bg-gradient-to-r from-purple-800/20 to-blue-800/20 rounded-lg border border-purple-400/30">
+              <div className="space-y-4 text-[16px] leading-7 spiritual-text-on-dark text-center">
+                <p>
+                  כל מפגש, כל קורס, כל שיחה — נולדים מתוך אותה שליחות אחת:
+                  להזכיר לך שאת.ה הרבה יותר ממה שנדמה לך. להזכיר לך שהאור שאת.ה
+                  מחפש — כבר נמצא בתוכך.
+                </p>
+                <p>
+                  בין אם זו קריאה ראשונה בלבך לצאת למסע הזה, ובין אם כבר הלכת
+                  דרך ארוכה — אני כאן כדי להחזיק עבורך את המראה הרכה שבה תוכלי
+                  לראות את עצמך באמת. ומשם, הכול מתחיל להיפתח.
+                </p>
+              </div>
             </div>
           </div>
         </section>

@@ -16,7 +16,7 @@ export default function CommunicationCoursePage() {
               קורסי תקשור והתפתחות רוחנית
             </h1>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {/* שלב א */}
               <div className="spiritual-card p-6">
                 <div className="text-center mb-6">

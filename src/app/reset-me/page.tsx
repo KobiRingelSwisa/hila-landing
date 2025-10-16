@@ -48,7 +48,7 @@ export default function ResetMePage() {
                 </div>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 gap-6 md:gap-8">
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div>

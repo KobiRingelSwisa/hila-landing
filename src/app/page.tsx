@@ -66,12 +66,12 @@ export default function HomePage() {
         <Header />
 
         {/* Hero Section */}
-        <section id="hero" className="section-y mt-40">
+        <section id="hero" className="section-y mt-32 md:mt-40">
           <div className="container-max">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               {/* Text Content */}
-              <div className="text-right">
-                <div className="text-[18px] leading-8 spiritual-text-on-dark space-y-4 animate-fade-in">
+              <div className="text-right order-2 md:order-1">
+                <div className="text-base md:text-[18px] leading-7 md:leading-8 spiritual-text-on-dark space-y-4 animate-fade-in">
                   <p className="text-xl font-medium">
                     מאז ילדותי ליוו אותי שאלות מהותיות על טבע היקום, על מה
                     שמתרחש מעבר לזמן ולמרחב ועל מסע הנשמה בין העולמות...
@@ -88,8 +88,8 @@ export default function HomePage() {
                     ולצאת למסע של התפתחות והעצמה אישית.
                   </p>
 
-                  <div className="mt-8 p-6 bg-gradient-to-r from-purple-900/20 to-blue-900/20 rounded-lg border border-gold-1/20">
-                    <div className="space-y-4 text-[16px] leading-7 spiritual-text-on-dark">
+                  <div className="mt-6 md:mt-8 p-4 md:p-6 bg-gradient-to-r from-purple-900/20 to-blue-900/20 rounded-lg border border-gold-1/20">
+                    <div className="space-y-3 md:space-y-4 text-sm md:text-[16px] leading-6 md:leading-7 spiritual-text-on-dark">
                       <p>
                         כל מסע של ריפוי מתחיל ברגע שבו אנחנו עוצרים, נושמים,
                         ומסכימים להביט פנימה — מעבר לסיפור, מעבר לכאב, אל תוך
@@ -115,14 +115,15 @@ export default function HomePage() {
               </div>
 
               {/* Image */}
-              <div className="text-center">
-                <div className="relative inline-block">
+              <div className="text-center order-1 md:order-2">
+                <div className="relative inline-block max-w-sm md:max-w-md mx-auto">
                   <Image
                     src={hilaPhoto}
                     alt="הילה תחכמוני - מתקשרת ומטפלת רגשית"
                     width={400}
                     height={500}
-                    className="rounded-lg shadow-2xl object-cover"
+                    className="rounded-lg shadow-2xl object-cover w-full h-auto"
+                    priority
                   />
                 </div>
               </div>
@@ -136,7 +137,7 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-12 gold-text-on-dark">
               הצטרפו לקהילה שלי
             </h2>
-            <div className="flex flex-col md:flex-row gap-6 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-stretch sm:items-center">
               <a
                 href="https://www.facebook.com/groups/385840256440426"
                 target="_blank"
@@ -155,8 +156,8 @@ export default function HomePage() {
               </a>
             </div>
 
-            <div className="mt-8 p-6 bg-gradient-to-r from-gold-1/10 to-gold-2/10 rounded-lg border border-gold-1/30">
-              <div className="space-y-4 text-[16px] leading-7 spiritual-text-on-dark text-center">
+            <div className="mt-6 md:mt-8 p-4 md:p-6 bg-gradient-to-r from-gold-1/10 to-gold-2/10 rounded-lg border border-gold-1/30">
+              <div className="space-y-3 md:space-y-4 text-sm md:text-[16px] leading-6 md:leading-7 spiritual-text-on-dark text-center">
                 <p>
                   הקהילה שלי נולדה מתוך הלב, כדי שכל אחת ואחד יוכל לזכור שהוא לא
                   לבד בדרך הזו. אנחנו צועדים יחד — משתפים, לומדים, נפתחים
@@ -196,8 +197,8 @@ export default function HomePage() {
               <span>קורסים מקיפים להתפתחות תודעתית</span>
             </div>
 
-            <div className="mt-8 p-6 bg-gradient-to-r from-purple-800/20 to-blue-800/20 rounded-lg border border-purple-400/30">
-              <div className="space-y-4 text-[16px] leading-7 spiritual-text-on-dark text-center">
+            <div className="mt-6 md:mt-8 p-4 md:p-6 bg-gradient-to-r from-purple-800/20 to-blue-800/20 rounded-lg border border-purple-400/30">
+              <div className="space-y-3 md:space-y-4 text-sm md:text-[16px] leading-6 md:leading-7 spiritual-text-on-dark text-center">
                 <p>
                   כל מפגש, כל קורס, כל שיחה — נולדים מתוך אותה שליחות אחת:
                   להזכיר לך שאת.ה הרבה יותר ממה שנדמה לך. להזכיר לך שהאור שאת.ה

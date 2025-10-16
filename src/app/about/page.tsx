@@ -63,7 +63,7 @@ export default function AboutPage() {
                   הכלים והשיטות שלי:
                 </h2>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
                       <div>

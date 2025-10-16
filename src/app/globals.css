@@ -275,12 +275,33 @@
     }
 
     .section-y {
-      padding-block: 60px;
+      padding-block: 48px;
     }
 
     .card {
-      border-radius: 16px;
-      padding: 20px;
+      border-radius: 12px;
+      padding: 16px;
+    }
+    
+    .spiritual-card {
+      padding: 16px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .container-max {
+      padding-inline: 32px;
+    }
+  }
+  
+  /* Mobile-first text sizes */
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 1.875rem !important; /* 30px */
+    }
+    
+    h2 {
+      font-size: 1.5rem !important; /* 24px */
     }
   }
 }

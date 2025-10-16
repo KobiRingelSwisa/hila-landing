@@ -129,7 +129,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 py-6 border-t border-broken-white/20 animate-fade-in">
+          <div className="md:hidden mt-4 py-6 border-t border-broken-white/20 animate-fade-in bg-gradient-to-b from-deep-purple via-purple-blue to-deep-purple rounded-lg">
             <nav className="flex flex-col space-y-6">
               <Link
                 href="/about"
